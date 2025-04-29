@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Star Studio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      background: #111;
+      line-height: 1.6;
+    }
+
+    .top-bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 1);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 24px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #FFD700;
+    }
+
+    .section {
+      padding: 120px 30px 60px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .games-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .game-card {
+      background: #222;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 250px;
+    }
+
+    .qa-item {
+      margin-bottom: 20px;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    section {
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    #Announcements {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 8px 16px;
+      margin-left: 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top-bar">
+    <div class="container">
+      <h1 class="logo">Three Star Studio</h1>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#games">Games</a>
+        <a href="#qa">Q&A</a>
+        <a href="announcements.html" id="Announcements">Announcements</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;Welcome! You may be coming to us from our games,
+        or maybe you found our website, so if you do not know who we are,
+        we are a Roblox group that creates games public to anyone.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+        We were founded on the game Rolling Cards, but that is not our only game.
+        You can view our full list of game in the "games" tab.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+      </p>
+    </section>
+
+    <section id="games" class="section">
+      <h2>Our Games</h2>
+      <div class="games-list">
+        <div class="game-card">
+          <h3>Rolling Cards</h3>
+          <p>Come on here and test your luck by rolling for cards! 🃏<br> 
+
+            Every second you earn 1$, or you can complete obbies! 💵<br>
+            
+           More features and card packs will be coming soon! 🎮</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="qa" class="section">
+      <h2>Q & A</h2>
+      <div class="qa-item">
+        <h4>Q: I am a new staff member, what do I do?</h4>
+        <p>A: Congrats on becoming a member of staff! First thing you want to do is go to our communications server, only avalible to staff, then verify,
+          and you should be in to view your tasks. If you have any questions, feel free to ask your manager.
+        </p>
+      </div>
+      <div class="qa-item">
+        <h4>Q: How can I become staff?</h4>
+        <p>A: When we need staff, we will make a new section for staffing. You can click on the link, and fill out the form. We will follow up if we like
+          your application.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
